@@ -18,12 +18,15 @@ public class BroodMother {
 	
 	/**
 	 * @param args
+	 * @throws InterruptedException
 	 */
 	public static void main(String[] args) {
 		
 		Spiderling sp1 = new Spiderling("https://gist.github.com/sidmishraw",
 				"https://gist.github.com/sidmishraw");
+		
 		Thread t1 = new Thread(sp1);
+		
 		t1.start();
 	}
 }
